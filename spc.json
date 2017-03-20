@@ -1,0 +1,34 @@
+{
+   "category": "", 
+   "name": "plot_two_apps", 
+   "input_format": "ini", 
+   "language": "", 
+   "command": "../../../../apps/plot_two_apps/plot_two_apps", 
+   "postprocess": "", 
+   "preprocess": "", 
+   "plots": [
+      {
+         "datasource": [
+            {
+               "filename": "../../<app1>/<cid1>/<cid1>.000.hst", 
+               "data_def": "{label: \"mendel\", data: d1, lines: { show: true }, color: \"rgb(200,0,0)\"}", 
+               "cols": "1:2", 
+               "line_range": "2:10000", 
+               "label": "mendel"
+            }, 
+            {
+               "filename": "../../<app2>/<cid2>/test/data/xyz-1_bygen.txt", 
+               "data_def": "{label: \"nemo\", data: d2, lines: { show: true }, color: \"rgb(0,200,0)\"}", 
+               "cols": "1:54", 
+               "line_range": "2:10000", 
+               "label": "nemo"
+            }
+         ], 
+         "options": "legend: { position: \"nw\"}, xaxis: { axisLabel: \"generations\"}, yaxis: { axisLabel: \"fitness\"}", 
+         "ptype": "flot-scatter", 
+         "title": "fitness: mendel vs nemo"
+      }
+   ], 
+   "assets": [], 
+   "description": ""
+}
