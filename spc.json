@@ -17,16 +17,37 @@
                "label": "mendel"
             }, 
             {
-               "filename": "../../<app2>/<cid2>/test/data/xyz-1_bygen.txt", 
+               "filename": "../../<app2>/<cid2>/mendel.hst", 
                "data_def": "{label: \"nemo\", data: d2, lines: { show: true }, color: \"rgb(0,200,0)\"}", 
-               "cols": "1:54", 
+               "cols": "1:6", 
                "line_range": "2:10000", 
                "label": "nemo"
             }
          ], 
-         "options": "legend: { position: \"nw\"}, xaxis: { axisLabel: \"generations\"}, yaxis: { axisLabel: \"fitness\"}", 
+         "options": "legend: { position: \"nw\"}, xaxis: { axisLabel: \"generations\"}, yaxis: { min: 0.5, axisLabel: \"fitness\"}, legend: { position: 'se' }", 
          "ptype": "flot-scatter", 
-         "title": "fitness: mendel vs nemo"
+         "title": "fitness: mendel-f90 vs mendel-go"
+      }, 
+      {
+         "datasource": [
+            {
+               "filename": "../../<app1>/<cid1>/<cid1>.000.hst", 
+               "data_def": "{label: \"mendel-f90\", data: d1, lines: { show: true }, color: \"rgb(200,0,0)\"}", 
+               "cols": "1:4", 
+               "line_range": "2:10000", 
+               "label": "mendel-f90"
+            }, 
+            {
+               "filename": "../../<app2>/<cid2>/mendel.hst", 
+               "data_def": "{label: \"mendel-go\", data: d2, lines: { show: true }, color: \"rgb(0,200,0)\"}", 
+               "cols": "1:3", 
+               "line_range": "2:10000", 
+               "label": "mendel-go"
+            }
+         ], 
+         "options": "legend: { position: \"nw\"}, xaxis: { axisLabel: \"generations\"}, yaxis: { axisLabel: \"avg mutations per individual\"}", 
+         "ptype": "flot-scatter", 
+         "title": "mutations: mendel-f90 vs mendel-go"
       }
    ], 
    "assets": [], 
